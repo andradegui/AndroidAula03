@@ -24,9 +24,10 @@ class MainActivity : AppCompatActivity() {
 
         btnSomar.setOnClickListener {
 
-            if(!editValor1.text.isEmpty() )
-            val valor1 = editValor1.text.toString().toInt();
-            val valor2 = editValor2.text.toString().toInt();
+            if(!editValor1.text.isEmpty() && !editValor2.text.isEmpty()){
+                val valor1 = editValor1.text.toString().toInt();
+                val valor2 = editValor2.text.toString().toInt();
+            }
 
 
             val resultado = valor1 + valor2;
